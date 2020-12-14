@@ -14,6 +14,9 @@ module Discord
     UserPremiumGuildSubscriptionTier1 =  9
     UserPremiumGuildSubscriptionTier2 = 10
     UserPremiumGuildSubscriptionTier3 = 11
+    ChannelFollowAdd                  = 12
+    GuildDiscoveryDisqualified        = 14
+    GuildDiscoveryRequalified         = 15
 
     def self.new(pull : JSON::PullParser)
       MessageType.new(pull.read_int.to_u8)
